@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tienda</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+
+  <script type="text/javascript" src="./scripts/calculo.js"></script>
+<!--
+  <script type="text/javascript">
+    
+    function calcular(){
+      //console.log('TEst');
+
+    }
+
+  </script>
+-->
+
+</head>
+<body>
+
+
+
+<div class="container">  
+
+  <div class="row no-gutters align-items-center">
+    <div class="col-sm-3">
+      <img src="./imagenes/logo.png">
+    </div>
+    <div class="col-sm-6" style="text-align: center; font-size: 3em; text-align: center; " >
+      MI TIENDA
+    </div>
+    <div class="col-sm-3 text-center ">
+        <!--
+        <div class="media">
+          <img class="mr-3 " src="./imagenes/shopping-cart.jpg" alt="Generic placeholder image">
+          <div class="media-body">
+            <h5 class="mt-0">
+                  Mi Carrito 
+            </h5>
+          </div>
+        </div>
+        -->
+        
+        <div style="text-align: center;">
+          <img src="./imagenes/shopping-cart.jpg"  style="max-height: 4em; ">
+        </div>
+        <a href="#" style="font-size: 1.5em; text-decoration: none;">
+            Mi Carrito 
+        </a>
+    </div>
+  </div>
+</div>
+
+<form>
+<div class="container">
+  <div class="row">
+    <div class="col"></div>
+    <div class="col-sm-4 ">
+      
+      <div class="form-group row">
+        <label for="txt_leche" class="col-sm-3 col-form-label">Leche</label>
+        <div class="col-sm-9">
+          <input type="number" class="form-control" id="txt_leche" placeholder="" value="1">
+          <input type="hidden" id="txt_val_leche" value="2000">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="txt_huevos" class="col-sm-3 col-form-label">Huevos</label>
+        <div class="col-sm-9">
+          <input type="number" class="form-control" id="txt_huevos" placeholder="" value="1">
+          <input type="hidden" id="txt_val_huevos" value="300">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="txt_pan" class="col-sm-3 col-form-label">Pan</label>
+        <div class="col-sm-9">
+          <input type="hidden" id="txt_val_pan" value="500">
+          <input type="number" class="form-control" id="txt_pan" placeholder="" value="1">
+        </div>
+      </div>
+
+      <ul class="list-unstyled">
+        <li class="media">
+          <img class="mr-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM80WHzfj8j7snpSgA-KQndZuMz0ag199izrNQsy3W0gcNxgWC" alt="Generic placeholder image" style="max-width: 5em;">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Pan</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. 
+          </div>
+        </li>
+        <li class="media my-4">
+          <img class="mr-3 img-fluid" src="https://tribwgntv.files.wordpress.com/2015/05/swisscheese.jpg?quality=85&strip=all&w=640" alt="Generic placeholder image" style="max-width: 5em;">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Queso</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. 
+          </div>
+        </li>
+        <li class="media">
+          <img class="mr-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-S-_17QkgWfBdX7GY2ervtr3HaIbPXi7vl9dbxWRv8u8UJ6hI" alt="Generic placeholder image" style="max-width: 5em;" >
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Queso</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. 
+          </div>
+        </li>
+      </ul>
+
+      <hr>
+
+      <div class="form-group row">
+        <label for="txt_subtotal1" class="col-sm-3 col-form-label">Subtotal</label>
+        <div class="col-sm-9">
+          <input type="number" class="form-control" id="txt_subtotal1" placeholder="">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="txt_iva1" class="col-sm-3 col-form-label">Iva</label>
+        <div class="col-sm-9">
+          <input type="number" class="form-control" id="txt_iva1"  placeholder="">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4 ">
+      
+      <div class="form-group row">
+        <label for="txt_jabon" class="col-sm-3 col-form-label">Jabón</label>
+        <div class="col-sm-9">
+          <input type="number" class="form-control" id="txt_jabon" placeholder="" value="1">
+          <input type="hidden" id="txt_val_jabon" value="1500">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="txt_shampoo" class="col-sm-3 col-form-label">Shampoo</label>
+        <div class="col-sm-9">
+          <input type="number" class="form-control" id="txt_shampoo" placeholder="" value="1">
+          <input type="hidden" id="txt_val_shampoo" value="2500">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="txt_crema" class="col-sm-3 col-form-label">Crema</label>
+        <div class="col-sm-9">
+          <input type="number" class="form-control" id="txt_crema" placeholder="" value="1">
+          <input type="hidden" id="txt_val_crema" value="2500">
+        </div>
+      </div>
+
+      <ul class="list-unstyled">
+        <li class="media">
+          <img class="mr-3" src="http://saponedimare.com/wp-content/uploads/2016/07/antimosquitos-png.png" alt="Generic placeholder image" style="max-width: 5em;">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Jabón</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. 
+          </div>
+        </li>
+        <li class="media my-4">
+          <img class="mr-3 img-fluid" src="https://azcdn.hubble.pgsitecore.com/es/-/media/HeadandShoulders_MX/Images/Products/Update/SH%20200ml%201600x1600.jpg?w=460&v=1-201804060930" alt="Generic placeholder image" style="max-width: 5em;">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Shampoo</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. 
+          </div>
+        </li>
+        <li class="media">
+          <img class="mr-3" src="https://dentalactiva.files.wordpress.com/2014/11/por-tu-sonrisa-110-crema.png?w=640" alt="Generic placeholder image" style="max-width: 5em;" >
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Crema</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. 
+          </div>
+        </li>
+      </ul>
+
+      <hr>
+
+      <div class="form-group row">
+        <label for="txt_subtotal2" class="col-sm-3 col-form-label">Subtotal</label>
+        <div class="col-sm-9">
+          <input type="number" class="form-control" id="txt_subtotal2" placeholder="">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="txt_iva2" class="col-sm-3 col-form-label">Iva</label>
+        <div class="col-sm-9">
+          <input type="number" class="form-control" id="txt_iva2" placeholder="">
+        </div>
+      </div>
+
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+</form>
+
+
+<br>
+<br>
+<div class="container">  
+  <div class="row justify-content-center">
+
+    
+    <div class="col-sm-3">
+      <h2>Factura</h2> <br>
+      <button class="btn btn-primary btn-lg btn-block" onClick="calcular_total();">Calcular</button>
+    </div>
+    <div class="col-sm-4">
+
+      <div class="form-group row">
+        <label for="txt_main_subtotal" class="col-sm-3 col-form-label">Subtotal</label>
+        <div class="col-sm-9">
+          <input type="number" class="form-control" id="txt_main_subtotal" placeholder="">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="txt_main_iva" class="col-sm-3 col-form-label">Iva</label>
+        <div class="col-sm-9">
+          <input type="number" class="form-control" id="txt_main_iva" placeholder="">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="txt_main_total" class="col-sm-3 col-form-label">Total</label>
+        <div class="col-sm-9">
+          <input type="number" class="form-control" id="txt_main_total" placeholder="">
+        </div>
+      </div>
+      
+      <input type="hidden" id="txt_val_iva" value="0.19">
+
+    </div>
+    
+  </div>
+</div>
+
+<div class="container" style="font-size: 0.9em; color: #ccc; text-align: center; margin-top: 4em;">
+    Copyright 2018 - Mi Tienda
+</div>
+  
+
+
+</body>
+</html>

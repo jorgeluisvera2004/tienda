@@ -1,0 +1,10 @@
+.container{ max-width: 1100px; margin: 0px auto;  }
+table.header{ width: 100%;   }
+table.header tr td, table.header tr th{ padding: 20px;   }
+table.header img{ max-height: 6em;   }
+.shopping-body fieldset{ padding: 1em; border: 1px solid #ccc; }
+.shopping-body .left{ width: 48%; float: left; }
+.shopping-body .right{ width: 48%; float: right; }
+.shopping-body table{ width: 100%; font-size: 1.2em; }
+.shopping-body input{ padding: 5px 10px; width: 95%; text-align: right; margin-bottom: 3px; }
+.shopping-body button{ border: 1px solid blue; background-color: darkblue; color: white; padding: 6px 20px; font-size: 1.1em; }
